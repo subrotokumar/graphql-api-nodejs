@@ -7,7 +7,7 @@ Before you get started, make sure you have the following software installed on y
 
 - [Node.js](https://nodejs.org/) (v14 or higher)  
 - [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) package manager
-- 
+
 ## **Getting Started**
 To get started with this server, follow these steps:
 
@@ -57,7 +57,7 @@ Here's a high-level overview of the project structure:
 
 - **src/index.ts**: Entry point of the application. Initializes Apollo Server and sets up the GraphQL schema.
 - **src/schema/type-def.ts**: Defines the GraphQL schema using the graphql-tools library. You can modify this file to add or remove GraphQL types, queries, and mutations.
-- **src/schema/resolvers/**: Contains the resolver functions for the GraphQL schema. You can modify these files to add or remove resolver functions for your GraphQL API.
+- **src/schema/resolvers.ts**: Contains the resolver functions for the GraphQL schema. You can modify these files to add or remove resolver functions for your GraphQL API.
 <!-- - **src/models/**: Contains the data models used by the resolvers. You can modify these files to add or remove data models for your GraphQL API.
 tests/: Contains the tests for the server. You can modify these files to add or remove tests for your GraphQL API. -->
 <!-- - **.env.example**: Example environment variables file. Copy this file to .env and modify it to suit your needs.
@@ -66,3 +66,9 @@ tests/: Contains the tests for the server. You can modify these files to add or 
 - **package.json**: NPM package file. You can modify this file to add or remove dependencies for your server.
 - **README.md**: This file. You can modify this file to provide more detailed instructions for your server.
 - **tsconfig.json**: TypeScript configuration file. You can modify this file to change the TypeScript compiler options for your codebase.
+
+## **Contributing**
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## **License**
+This project is licensed under the `MIT` License. See the LICENSE file for more information.
