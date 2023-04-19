@@ -1,5 +1,3 @@
-// const { gql } = require('@apollo/server')
-
 const typeDefs = `
     type User {
         id: ID!
@@ -8,6 +6,7 @@ const typeDefs = `
         age: Int!
         nationality: Nationality!
         friends: [User]
+        favoriteMovies: [Movie]
     }
 
     type Movie {
@@ -21,7 +20,17 @@ const typeDefs = `
         users: [User!]!
         user(id: ID!): User!
         movies: [Movie!]!
-        movie(name: String): Movie!
+        movie(name: String!): Movie!
+    }
+    
+    input CreateUserInput {
+        name: String!
+        username: String!
+        age: Int!
+        nationality: Nationality = INDIA
+    }
+    type Mutation {
+        createUser(user: CreateUserInput!): User
     }
 
     enum Nationality {

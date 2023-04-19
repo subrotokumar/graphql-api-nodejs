@@ -1,4 +1,4 @@
-import { MovieList, UserList } from "../FakeData.js"
+import { MovieList, User, UserList } from "../FakeData.js"
 // import * as lodash from "lodash"
 
 const resolvers = {
@@ -23,6 +23,16 @@ const resolvers = {
             )
             return movie;
         }
+    },
+    Mutation: {
+        createUser: (parent, args) => {
+            const user: User = args.user
+            console.log(user)
+            const lastId= UserList[UserList.length-1].id
+            user.id = lastId + 1
+            UserList.push(user);
+            return user;
+        }    
     }
 }
 

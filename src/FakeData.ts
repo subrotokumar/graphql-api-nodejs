@@ -1,4 +1,13 @@
-const UserList = [
+type User = {
+    id: number
+    name: string
+    username: string
+    age: number
+    nationality: string
+    friends?: Array<User>,
+}
+
+const UserList: User[] = [
     {
         id: 1,
         name: "John",
@@ -55,7 +64,19 @@ const MovieList = [
         name: 'Avengers5',
         releaseYear: 2025,
         isInTheaters: false
+    },
+    {
+        id: 3,
+        name: 'Suzume',
+        releaseYear: 2022,
+        isInTheaters: true
+    }, 
+    {
+        id: 4,
+        name: 'Black Widow',
+        releaseYear: 2021,
+        isInTheaters: false
     }
 ]
 
-export { UserList, MovieList }
+export { UserList, MovieList, User }
