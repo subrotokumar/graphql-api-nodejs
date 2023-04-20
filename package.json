@@ -5,9 +5,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "watch":"tsc -w",
+    "watch": "tsc -w",
     "compile": "tsc",
-    "dev": "yarn compile & nodemon ./dist/index.js"
+    "start": "yarn compile & nodemon ./dist/index.js"
   },
   "dependencies": {
     "@apollo/server": "^4.6.0",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
     "typescript": "^5.0.4"
   }
 }

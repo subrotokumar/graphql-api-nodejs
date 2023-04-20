@@ -44,6 +44,7 @@ Here's a high-level overview of the project structure:
 
 ```
 [PROJECT]
+├── client/                 # Frontend integration of API with @apollo/client
 ├── src/
 │   ├── index.ts            # Entry point of the application.
 │   └── schema/        
